@@ -1,0 +1,289 @@
+li::marker{
+    font-size: 30px;
+}
+li{
+    font-size: 1.2rem;
+}
+body{
+    color: rgb(94, 93, 93);
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#homecontainer{
+    box-shadow: 0px 5px 0px rgba(128, 128, 128, 0.641);
+}
+.dark-mode #homecontainer{
+    box-shadow: none;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+#themeBtn{
+    width: 0px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+#themeBtn:hover #moon-sun-icon{
+    scale: 1.1;
+}
+.dark-mode #themeBtn:hover{
+    color: black;
+}
+#themeBtn #moon-sun-icon{
+    transition: 0.25s;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+#education{
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-width: 5px;
+    border-radius: 1px;
+}
+.container{
+    margin-top: 100px;
+    border: 2px solid rgba(141, 140, 140, 0.83);
+    width: 750px;
+    height: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.aboutinfo{
+    z-index: 1;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 7px 0px rgba(128, 128, 128, 0.641);
+}
+.linkinfo{
+    z-index: 1;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 7px 0px rgba(128, 128, 128, 0.641);
+}
+.dark-mode .linkinfo{
+    background-color: rgb(9, 42, 88);
+    box-shadow: none;
+}
+.dark-mode .projectcontainer{
+    color: white;
+}
+.dark-mode #projectcard{
+    box-shadow:rgba(255, 255, 255, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px ;
+}
+.dark-mode #projectcard{
+    background-color: rgb(4, 60, 137);
+    border: 1px solid rgb(162, 161, 161);
+}
+#projectcard:hover{
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.profileinfo{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+.profileinfo img{
+    width: 155px;
+    height: 160px;
+    filter: none;
+    margin-left: 60px;
+}
+.profileinfo span{
+    color:  rgb(250, 181, 53);
+    font-family: "Nunito", sans-serif;
+}
+.profileinfo p{
+    font-weight: lighter;
+}
+#introduct .dark-mode span{
+    color: lightblue;
+}
+.info{
+
+    width: 100%;
+    height: 38.4%;
+    border: 1px solid rgba(171, 163, 163, 0.567);
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+#exitbtn{
+    position: absolute;
+    bottom: 90%;
+    left: 93%;
+    width: auto;
+    height: auto;
+    top: 0px;
+    font-size: 1.47rem;
+}
+#exitlinkbtn{
+    position: absolute;
+    bottom: 90%;
+    left: 93%;
+    width: auto;
+    height: auto;
+    top: 0px;
+    font-size: 1.47rem;
+}
+#exitaboutbtn{
+    position: absolute;
+    bottom: 90%;
+    left: 93%;
+    width: auto;
+    height: auto;
+    top: 0px;
+    font-size: 1.47rem;
+}
+.dark-mode span{
+    color: lightblue;
+}
+.dark-mode .aboutinfo{
+    color: white;
+    box-shadow: none;
+}
+.dark-mode .profileinfo{
+    background-color: rgb(9, 42, 88);
+}
+.dark-mode .info{
+    background-color: rgb(9, 42, 88);
+}
+#homepage{
+    color: white;
+    border:1px solid rgba(141, 140, 140, 0.863);
+    border-bottom-color:rgb(96, 96, 96);
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 23px;
+    font-size: 1.2rem;
+    background-color: rgba(81, 77, 77, 0.863);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dark-mode #homepage{
+    background: black;
+    border-bottom-style: 4px solid white;
+}
+.dark-mode .container{
+    background-color: rgb(9, 42, 88);
+    border:2px solid white;
+}
+#info #introduct{
+    font-size: 3rem;
+    font-family: "Inconsolata", monospace;
+}
+#info #introduct span{
+    color: rgb(246, 186, 75);
+}
+img{
+    width: 80px;
+    filter: drop-shadow(4px 6px 2px grey);
+}
+.dark-mode img{
+    filter: drop-shadow(4px 6px 2px rgb(255, 255, 255));
+}
+
+.faq{
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgba(141, 140, 140, 0.863);
+    box-shadow: 0px 5px 2px rgba(128, 128, 128, 0.641);
+}
+.questionContainer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.q{
+    border: 1px solid;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+#ocean{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    overflow: hidden;
+}
+.dark-mode #ocean{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 5px rgb(59, 252, 245);
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px 5px white;
+    }
+    50% {
+        box-shadow: 0 0 30px 10px white;
+    }
+}
+.wave1 {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://front-end-noobs.com/jecko/img/wave-top.png");
+    background-size: 1000px 100px;
+    animation: waveMotion 20s linear infinite;
+    opacity: 0.5; /* Softer */
+    z-index: 1;
+}
+.dark-mode .wave1 {
+    
+}
+.wave2 {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://front-end-noobs.com/jecko/img/wave-top.png");
+    background-size: 1000px 100px;
+    animation: waveMotion 40s alternate-reverse infinite;
+    opacity: 0.3; /* Even softer */
+    z-index: 0;
+}
+@keyframes waveMotion {
+    0% {
+        background-position-x: 500px;
+    }
+    100% {
+        background-position-x: 1100px;
+    }
+}

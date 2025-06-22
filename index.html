@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TaillWind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>ChessBurgit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function themeswitch()
+  {
+    var element = document.body;
+    var icon = document.getElementById("moon-sun-icon");
+    element.classList.toggle("dark-mode");
+
+    if(element.classList.contains("dark-mode")){
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+      icon.style.color = "white";
+    }
+    else{
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+      icon.style.color = "black";
+    }
+  }
+</script>
+<body>
+  <div id="homecontainer" class="container z-1">
+      <header id="homepage">home</header>   
+
+      <div id="info" class="gap-6 w-full h-full flex flex-col items-center p-0 text-center justify-center">
+        <h1 id="introduct" class="h-15">hi! <span>i'm kimpheng</span>
+        </h1>
+        <h1 class="text-lg font-ight">developer</h1>
+        <div class="link">
+          <nav class="">
+            <ul class="flex justify-evenly gap-7" >
+              <button type="button" id="showAbout" class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href=""><img src="/image/about.png" alt=""></i>
+            </button>
+              <button type="button" id="showinfo" class="hover:scale-105 duration-130 p-0" href=""><img src="/image/pngwing.com (1).png" alt=""></i>
+              </button>
+              <a class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href="https://github.com/IMSUCKATCODEING/"><img src="/image/github.png" alt=""></a>
+              <a class="hover:scale-105 duration-130 rounded-full" href=""><img src="/image/question.png" alt=""></a>
+              <a class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href=""><i class="fa-solid fa-circle-question fa-5x"></i></a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+  </div>
+  <div  class="aboutinfo absolute border w-[750px] h-[480px] rounded-[10px]" >
+    <header id="homepage">about</header>
+    <button type="button" id="exitbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <div class="profileinfo w-full ">
+      <img class="w-[0px] h-full rounded-full hover:scale-[1.05] duration-130" src="/image/profile_10647.png" alt="">
+      <p><span>Kimpheng Lorch キンペン・ローチ</span>
+      <br>Software developer
+      </p>
+    </div>
+    <div class="info w-full grid z-1">
+        <div class="w-full h-auto text-[1.2rem] ml-[55px]">
+            <h1>hi! i'm kimpheng, a software and web developer i..</h1>
+            <br>
+            <li>create java software</li>
+            <br>
+            <li>create GUI and</li>
+            <br>
+            <li>do frontend wed development</li>
+
+            <p class="mt-6">interested in working with me ? send me an email at <a class="underline decoration-yellow-500 hover:decoration-yellow-300" href="mailto:kimphenglorch@gmail.com"><span class="text-yellow-500 hover:text-yellow-300">chessburgit@gmail.com</span></a> :)</p> 
+
+            <h1 class="font-bold mt-8 mb-0 text-[1.6rem]">EDUCATION</h1>
+            <span id="education" class="border pb-10 pl-5 text-left">
+              Bachelor of Science of Computer Science
+              <br>
+              <span class="ml-6 text-grey-400 text-[14px]">
+                (GRADUATED RUPP 2028)
+              </span>
+            </span>
+            
+            <p class="font-bold mt-10 mb-0 text-[1.6rem]">OTHER INTEREST</p>
+            <br>
+            <li>game development</li>
+            <br>
+            <li>Cooking,Reading,Art...</li>
+            <br>
+            <li>Rainbow Six Siege(i'm gold hehehe)</li>
+            <br>
+            <li>Warhammer40K</li>
+            <br>
+            <li>Movie(Fantasy,Scifi)</li>
+            <br>
+            <h1 class="font-bold mt-8 mb-0 text-[1.6rem]">LANGUAGE PROFICIENCY</h1>
+            <p id="education" class="border pb-10 pl-5 text-left h-[60px]">
+             I have native fluency <span class="text-yellow-300">English</span>  and Khmer
+              <br>
+              I speak a little bit of Japanese, but at a very pre-school proficiency
+            </p>
+        </div>
+    </div>
+  </div>
+  <!--Link-->
+  <div  class="linkinfo  absolute border w-[600px] h-[480px] rounded-[10px] z-10 " >
+    <header id="homepage">Project</header>
+    <button type="button" id="exitlinkbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    
+    <div class="projectcontainer h-100 overflow-auto">
+    <div class="projectrow1 flex justify-evenly mt-10">
+
+      <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+        <figure>
+          <img class="border rounded-[10px] p-2"
+            src="/image/website1.png"
+            alt="Card" />
+        </figure>
+        <div class="card-body">
+          <p>this is my first project</p>
+          <h2 class="card-title">Card</h2>
+          <div class="card-actions justify-end">
+            <a href="https://imsuckatcodeing.github.io/card/" class="btn btn-primary">Go to Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+        <figure>
+          <img class="border rounded-[10px] p-2"
+            src="/image/aim1.webp"
+            alt="Card" />
+        </figure>
+        <div class="card-body">
+          <p>a fun aim trainer</p>
+          <h2 class="card-title">Aim trainer</h2>
+          <div class="card-actions justify-end">
+            <a href="https://imsuckatcodeing.github.io/Game/" class="btn btn-primary">Go to Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="projectrow2 flex justify-evenly mt-10 mb-10">
+
+      <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+        <figure>
+          <img class="border rounded-[10px] p-2"
+            src="/image/caclulator.png"
+            alt="Card" />
+        </figure>
+        <div class="card-body">
+          <p>a calculator :D</p>
+          <h2 class="card-title">Calculator</h2>
+          <div class="card-actions justify-end">
+            <a href="https://imsuckatcodeing.github.io/Calculator/" class="btn btn-primary">Go to Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+        <figure>
+          <img class="border rounded-[10px] p-2"
+            src="/image/"
+            alt="XD" />
+        </figure>
+        <div class="card-body">
+          <p>this take to nowhere i just want to mess with you</p>
+          <h2 class="card-title">Funny</h2>
+          <div class="card-actions justify-end">
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="btn btn-primary">Go to Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <!--Question-->
+  <div class="faq absolute border w-[500px] h-[480px] rounded-[10px] z-10">
+    <header id="homepage">question</header>
+    <button type="button" id="exitbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <div class="questionContainer border w-[500px] h-[424px]">
+        <div class="q"></div>
+    </div>
+  </div>
+
+  <div id="ocean">
+    <div class="wave1"></div>
+    <div class="wave2"></div>
+  </div>
+  <button class="absolute right-2  rounded-full p-2 top-2 hover:text-white" id="themeBtn" type="button" onclick="themeswitch()">
+    <i id="moon-sun-icon" class="fa-solid fa-moon fa-2x" style="color: #000000;"></i>
+  </button>
+</body>
+<script src="app.js"></script>
+</html>
