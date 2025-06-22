@@ -16,6 +16,7 @@ ocean.appendChild(docFrag);
 //draggable fucntion
 dragElement(document.querySelector(".aboutinfo"));
 dragElement(document.querySelector(".linkinfo"));
+dragElement(document.querySelector(".faq"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -82,6 +83,15 @@ exitlinkbtn.addEventListener('click', () => {
     linkInfo.style.display = 'none';
   }
 });
+const exitfaqbtn = document.getElementById('exitfaqbtn');
+exitfaqbtn.addEventListener('click',()=>{
+  const faq = document.querySelector('.faq');
+  if(faq)
+    {
+      faq.style.display = 'none';
+    }
+})
+
 //showabout
 document.addEventListener('DOMContentLoaded', () => {
   const showAboutBtn = document.getElementById('showAbout');
@@ -101,6 +111,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutInfo = document.querySelector('.linkinfo');
     if (aboutInfo) {
       aboutInfo.style.display = 'block';
+    }
+  });
+});
+//showfaq
+document.addEventListener('DOMContentLoaded', () => {
+  const showAboutBtn = document.getElementById('showfaq');
+  showAboutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const aboutInfo = document.querySelector('.faq');
+    if (aboutInfo) {
+      aboutInfo.style.display = 'block';
+    }
+  });
+});
+//use closet when have element of the same name
+
+//dropanswer
+const dropbtn = document.querySelectorAll('.dropbtn');
+
+dropbtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    // Find the closest parent with class "q"
+    const question = btn.closest('.q');
+    
+    // Toggle minHeight only for this question
+    if (question.style.minHeight === '120px') {
+      question.style.minHeight = '60px';
+      btn.style.transform ='rotate(0deg)';
+    } else {
+      question.style.minHeight = '120px';
+      btn.style.transform='rotate(180deg)'
     }
   });
 });
