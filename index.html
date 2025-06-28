@@ -46,12 +46,12 @@
         <div class="link">
           <nav class="">
             <ul class="flex justify-evenly gap-7" >
-              <button type="button" id="showAbout" class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href=""><img src="about.png" alt=""></i>
+              <button type="button" id="showAbout" onclick="audio.play();" class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href=""><img src="about.png" alt=""></i>
             </button>
-              <button type="button" id="showinfo" class="hover:scale-105 duration-130 p-0" href=""><img src="pngwing.com (1).png" alt=""></i>
+              <button type="button" id="showinfo" onclick="audio.play();" class="hover:scale-105 duration-130 p-0" href=""><img src="pngwing.com (1).png" alt=""></i>
               </button>
               <a class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href="https://github.com/IMSUCKATCODEING/"><img src="github.png" alt=""></a>
-              <button id="showfaq" class="hover:scale-105 duration-130 rounded-full" href=""><img src="question.png" alt="">
+              <button id="showfaq" onclick="audio.play();" class="hover:scale-105 duration-130 rounded-full" href=""><img src="question.png" alt="">
               </button>
               <a class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-cyan-500/50" href=""><i class="fa-solid fa-circle-question fa-5x"></i></a>
             </ul>
@@ -63,7 +63,7 @@
   <!--abourinfo-->
   <div  class="aboutinfo absolute border w-[750px] h-[480px] rounded-[10px]" >
     <header id="homepage">about</header>
-    <button type="button" id="exitbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <button type="button" id="exitbtn" class="hover:scale-[1.13] duration-103 text-white" onclick="closeaudio.play();">[x]</button>
     <div class="profileinfo w-full ">
       <img class="w-[0px] h-full rounded-full hover:scale-[1.05] duration-130" src="profile.jpg" alt="">
       <p><span>Kimpheng Lorch キンペン・ローチ</span>
@@ -115,7 +115,7 @@
   <!--Link-->
   <div  class="linkinfo  absolute border w-[600px] h-[480px] rounded-[10px] z-10 " >
     <header id="homepage">Project</header>
-    <button type="button" id="exitlinkbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <button type="button" id="exitlinkbtn" class="hover:scale-[1.13] duration-103 text-white" onclick="closeaudio.play();">[x]</button>
     
     <div class="projectcontainer h-100 overflow-auto">
     <div class="projectrow1 flex justify-evenly mt-10">
@@ -189,9 +189,9 @@
   </div>
 
   <!--Question-->
-  <div class="faq absolute border w-[500px] h-[480px] rounded-[10px] z-10 hidden">
+  <div class="faq absolute border w-[500px] h-[480px] rounded-[10px] z-10 hidden" >
     <header id="homepage">question</header>
-    <button type="button" id="exitfaqbtn" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <button type="button" id="exitfaqbtn" class="hover:scale-[1.13] duration-103 text-white" onclick="closeaudio.play();">[x]</button>
     <div class="questionContainer w-[500px] h-[424px]">
         <div class="q">
           <div class="headerQ">
@@ -233,23 +233,235 @@
             <header class="questiontitle">chicken nugget?</header>
             <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
           </div>
-          <p class="ml-[20px] mt-[16px] text-sm">yes :) <a href="https://www.youtube.com/@shar" class="underline text-orange-400">shar</a></p>
+          <p class="ml-[20px] mt-[16px] text-sm">yes :)</p>
         </div>
         <div class="q">
           <div class="headerQ">
             <header class="questiontitle">The profile picture?</header>
             <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
           </div>
-          <p class="ml-[20px] mt-[16px] text-sm">i make that using my phone  <a href="https://www.youtube.com/@shar" class="underline text-orange-400">shar</a></p>
+          <p class="ml-[20px] mt-[16px] text-sm">i make that using my phone  </p>
         </div>
     </div>
   </div>
+
+</div>
+<!--for mobile-->
+
+<div class="mobile-container hidden">
+  <h1><span>hi</span> i'm kimpheng</h1>
+  <div class="item">
+    <nav class="flex gap-7 flex-wrap">
+      <ul class="flex flex-col justify-center items-center">
+        <button type="button" id="showAboutmobile" class="hover:scale-105 duration-130 rounded-full shadow-lg shadow-gray-500/50" href=""><img src="about.png" alt=""></i>
+        </button>
+        <p>about</p>
+      </ul>
+      <ul class="flex flex-col justify-center items-center">
+        <button type="button" id="showinfomobile" class="hover:scale-105 duration-130 p-0" href=""><img src="pngwing.com (1).png" alt=""></i>
+        </button>
+        <p>project</p>
+      </ul>
+      <ul class="flex flex-col justify-center items-center">
+        <button id="showfaqmobile" class="hover:scale-105 duration-130 rounded-full" href=""><img src="question.png" alt="">
+        </button>
+        <p>faq</p>
+      </ul>
+    </nav>
+  </div>
+  <!--mobile about-->
+  <div class="aboutinfomobile hidden absolute border w-[750px] h-[480px] rounded-[10px]" >
+    <header id="homepage">about</header>
+    <button type="button" id="exitbtnmobile" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+    <div class="profileinfo w-full text-center flex justify-center">
+      <img class="w-full rounded-full" src="profile.jpg" alt="">
+      <p><span>Kimpheng Lorch キンペン・ローチ</span>
+      <br>Software developer
+      </p>
+    </div>
+    <div class="info w-full grid z-1">
+        <div class="w-full h-auto text-[1.2rem] ml-[20px]">
+            <h1>hi! i'm kimpheng, a software and web developer i..</h1>
+            <br>
+            <li>create java software</li>
+            <br>
+            <li>create GUI and</li>
+            <br>
+            <li>do frontend wed development</li>
+
+            <p class="mt-6">interested in working with me ? send me an email at <a class="underline decoration-yellow-500 hover:decoration-yellow-300" href="mailto:kimphenglorch@gmail.com"><span class="text-yellow-500 hover:text-yellow-300">chessburgit@gmail.com</span></a> :)</p> 
+
+            <h1 class="font-bold mt-8 mb-0 text-[1.6rem]">EDUCATION</h1>
+            <span id="education" class="border pb-10 pl-5 text-left">
+              Bachelor of Science of Computer Science
+              <br>
+              <span class="ml-6 text-grey-400 text-[14px]">
+                (GRADUATED RUPP 2028)
+              </span>
+            </span>
+            
+            <p class="font-bold mt-10 mb-0 text-[1.6rem]">OTHER INTEREST</p>
+            <br>
+            <li>game development</li>
+            <br>
+            <li>Cooking,Reading,Art...</li>
+            <br>
+            <li>Rainbow Six Siege(i'm gold hehehe)</li>
+            <br>
+            <li>Warhammer40K</li>
+            <br>
+            <li>Movie(Fantasy,Scifi)</li>
+            <br>
+            <h1 class="font-bold mt-8 mb-0 text-[1.6rem]">LANGUAGE PROFICIENCY</h1>
+            <p id="education" class="border pb-10 pl-5 text-left h-[60px]">
+             I have native fluency <span class="text-yellow-300">English</span>  and Khmer
+              <br>
+              I speak a little bit of Japanese, but at a very pre-school proficiency
+            </p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--for mobile link-->
+<div  class="linkinfomobile hidden absolute border w-[600px] h-[480px] rounded-[10px] z-10 " >
+<header id="homepage">Project</header>
+<button type="button" id="exitlinkbtnmobile" class="hover:scale-[1.13] duration-103 text-white">[x]</button>
+
+<div class="projectcontainer overflow-auto">
+<div class="projectrow1 flex justify-evenly mt-10">
+
+  <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+    <figure>
+      <img class="border rounded-[10px] p-2"
+        src="website1.png"
+        alt="Card" />
+    </figure>
+    <div class="card-body">
+      <p>this is my first project</p>
+      <h2 class="card-title">Card</h2>
+      <div class="card-actions justify-end">
+        <a href="https://imsuckatcodeing.github.io/card/" class="btn btn-primary">Go to Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+    <figure>
+      <img class="border rounded-[10px] p-2"
+        src="aim1.webp"
+        alt="Card" />
+    </figure>
+    <div class="card-body">
+      <p>a fun aim trainer</p>
+      <h2 class="card-title">Aim trainer</h2>
+      <div class="card-actions justify-end">
+        <a href="https://imsuckatcodeing.github.io/Game/" class="btn btn-primary">Go to Website</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="projectrow2 flex justify-evenly mt-10 mb-10">
+
+  <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+    <figure>
+      <img class="border rounded-[10px] p-2"
+        src="caclulator.png"
+        alt="Card" />
+    </figure>
+    <div class="card-body">
+      <p>a calculator :D</p>
+      <h2 class="card-title">Calculator</h2>
+      <div class="card-actions justify-end">
+        <a href="https://imsuckatcodeing.github.io/Calculator/" class="btn btn-primary">Go to Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="projectcard" class="card bg-base-100 w-50 shadow-sm">
+    <figure>
+      <img class="border rounded-[10px] p-2"
+        src="/image/"
+        alt="XD" />
+    </figure>
+    <div class="card-body">
+      <p>this take to nowhere i just want to mess with you</p>
+      <h2 class="card-title">Funny</h2>
+      <div class="card-actions justify-end">
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="btn btn-primary">Go to Website</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<!--faq mobile-->
+<div class="faqmobile hidden absolute border w-[500px] h-[480px] rounded-[10px] z-1" >
+<header id="homepage">question</header>
+<button type="button" id="exitfaqbtnmobile" class="hover:scale-[1.13] duration-103 text-white" >[x]</button>
+<div class="questionContainer w-[500px] h-[424px]">
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">How long did it take to create this website?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px]">It took around 2 week to finish this XD</p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">How did i get the icons?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px]">It is from <a href="https://fonts.google.com/" class="underline underline-offset-1 text-orange-400">google font</a> and <a href="https://fontawesome.com/" class="underline text-orange-400">font awesome</a></p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">Did i enjoy making this?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px]">yes i learn alot from making this</p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">Can i use your work?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px] text-sm">yes But pls do make sure to credit the owner her name is <a href="https://www.youtube.com/@shar" class="underline text-orange-400">shar</a></p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">favorite animal?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px]">Dragon Rawrrr</p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">chicken nugget?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px] text-sm">yes :)</p>
+    </div>
+    <div class="q">
+      <div class="headerQ">
+        <header class="questiontitle">The profile picture?</header>
+        <button type="button" class="dropbtn cursor-pointer hover:scale-[1.13] duration-103 text-white"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+      </div>
+      <p class="ml-[20px] mt-[16px] text-sm">i make that using my phone  </p>
+    </div>
+</div>
+</div>
+<!--Alert-->
+<p id="alert" class="hidden absolute bottom-0 p-6 z-1"><span>Hey there</span>
+<br>
+just letting you know the best experience is on desktop some feature can be woohky on different device</p>
 
   <div id="ocean">
     <div class="wave1"></div>
     <div class="wave2"></div>
   </div>
-  <button class="absolute right-2  rounded-full p-2 top-2 hover:text-white" id="themeBtn" type="button" onclick="themeswitch()">
+  <button class="absolute right-2  rounded-full p-2 top-2 hover:text-white" id="themeBtn" type="button" onclick="themeswitch();audio.play();">
     <i id="moon-sun-icon" class="fa-solid fa-moon fa-2x" style="color: #000000;"></i>
   </button>
 </body>

@@ -91,7 +91,30 @@ exitfaqbtn.addEventListener('click',()=>{
       faq.style.display = 'none';
     }
 })
-
+const exitbtnmobile = document.getElementById('exitbtnmobile')
+exitbtnmobile.addEventListener('click',()=>{
+  const aboutinfomobile = document.querySelector('.aboutinfomobile');
+  if(aboutinfomobile)
+    {
+      aboutinfomobile.style.display = 'none';
+    }
+})
+const exitlinkbtnmobile = document.getElementById('exitlinkbtnmobile')
+exitlinkbtnmobile.addEventListener('click',()=>{
+  const linkinfomobile = document.querySelector('.linkinfomobile');
+  if(linkinfomobile)
+    {
+      linkinfomobile.style.display = 'none';
+    }
+})
+const exitfaqbtnmobile = document.getElementById('exitfaqbtnmobile')
+exitfaqbtnmobile.addEventListener('click',()=>{
+  const faqmobile = document.querySelector('.faqmobile');
+  if(faqmobile)
+    {
+      faqmobile.style.display = 'none';
+    }
+})
 //showabout
 document.addEventListener('DOMContentLoaded', () => {
   const showAboutBtn = document.getElementById('showAbout');
@@ -125,6 +148,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+//showinfoonmobile
+document.addEventListener('DOMContentLoaded', () => {
+  const showAboutMobile = document.getElementById('showAboutmobile');
+  if (showAboutMobile) {
+    showAboutMobile.addEventListener('click', (e) => {
+      e.preventDefault();
+      const aboutInfoMobile = document.querySelector('.aboutinfomobile');
+      if (aboutInfoMobile) {
+        aboutInfoMobile.style.display = 'block';
+     // Optional: play click sound
+      }
+    });
+  }
+});
+//showlinkonmobile
+document.addEventListener('DOMContentLoaded',()=>{
+  const showlinkmobile = document.getElementById('showinfomobile');
+  if(showlinkmobile)
+    {
+      showlinkmobile.addEventListener('click',(e)=>{
+        e.preventDefault();
+        const linkmobile = document.querySelector('.linkinfomobile');
+        if(linkmobile)
+          {
+            linkmobile.style.display = 'block';
+          }
+      })
+    }
+})
+//showfaqonmobile
+document.addEventListener('DOMContentLoaded',()=>{
+  const showfaqmobile = document.getElementById('showfaqmobile');
+  if(showfaqmobile)
+    {
+      showfaqmobile.addEventListener('click',(e)=>{
+        e.preventDefault();
+        const faqmobile = document.querySelector('.faqmobile');
+        if(faqmobile)
+          {
+            faqmobile.style.display = 'block';
+          }
+      })
+    }
+})
 //use closet when have element of the same name
 
 //dropanswer
@@ -145,3 +212,8 @@ dropbtn.forEach((btn) => {
     }
   });
 });
+//sound
+const audio = new Audio();
+audio.src ="./click.mp3";
+const closeaudio = new Audio();
+closeaudio.src = "./close.mp3";
